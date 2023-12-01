@@ -1,0 +1,151 @@
+.rectangle, .transliteration, .birthdate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.rectangle form,
+.transliteration form,
+.birthdate form{
+    background: white;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    border: var(--border);
+    padding: 0 1rem 1rem;
+}
+
+.rectangle form h3,
+.transliteration form h3,
+.birthdate form h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.rectangle form span,
+.transliteration form span,
+.birthdate form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.rectangle form .box,
+.transliteration form .box,
+.birthdate form .box{
+    width: 100%;
+    margin: 0.7rem 0;
+    font-size: 1.6rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.rectangle form .btn,
+.birthdate form .btn{
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.rectangle form p,
+.birthdate form p{
+    padding-top: 0.8rem;
+    color: var(--black);
+    font-size: 1.5rem;
+    text-transform: none;
+}
+
+.chat {
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+    width: 100%;
+    overflow: auto;
+}
+
+.chat-window {
+    background: white;
+    border: var(--border);
+    width: 80rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    overflow-y: scroll;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    height: 60rem;
+}
+
+.user1-message {
+    align-self: flex-end;
+    background: #A0A0C0FF;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 10px;
+    margin: 5px;
+    max-width: 70%;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    text-transform: none;
+}
+
+.user2-message {
+    align-self: flex-start;
+    background: #e1e1e1;
+    color: black;
+    border-radius: 0.5rem;
+    padding: 10px;
+    margin: 5px;
+    max-width: 70%;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    text-transform: none;
+}
+
+.input-box {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.box{
+    width: 100%;
+    font-size: 1.6rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.btn {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sender {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+

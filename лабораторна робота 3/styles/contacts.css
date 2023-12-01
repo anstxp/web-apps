@@ -1,0 +1,101 @@
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0 0 60px;
+    gap: 6rem;
+    padding: 1rem 9%;
+}
+
+.feedback-form-container {
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+    padding-left: 70px;
+}
+
+.feedback-form-container form {
+    background: white;
+    width: 55rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+}
+
+.feedback-form-container h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--black);
+}
+
+.feedback-form-container span {
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.feedback-form-container .box {
+    padding: 1rem;
+    width: 100%;
+    margin: 0.7rem 0;
+    font-size: 1.6rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.contact-slider {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-slider h3 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.contact-slider a {
+    color: var(--black);
+    text-decoration: none;
+    display: block;
+    margin-top: 1px;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+.contact-slider a i {
+    font-size: 1.8rem;
+    margin-right: 10px;
+    color: var(--purple);
+}
+
+.contact-slider a:hover i {
+    color: var(--dark-color);
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+        margin: 1px;
+        padding: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .feedback-form-container {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .feedback-form-container form {
+        width: 100%;
+    }
+
+    .contact-slider h3 {
+        margin-top: -25px;
+    }
+}

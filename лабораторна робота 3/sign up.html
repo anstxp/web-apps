@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-1">
+
+        <a href="main.html" class="logo"> <i class="fas fa-book"></i> Books </a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here.." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="table.html" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="login.html" class="fas fa-user"></a>
+            <a class="fa-solid fa-right-to-bracket" href="sign up.html"></a>
+        </div>
+    </div>
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#featured">featured</a>
+            <a href="#reviews">reviews</a>
+            <a href="contacts.html">contacts</a>
+            <a href="FAQ.html">FAQ</a>
+        </nav>
+    </div>
+</header>
+
+<nav class="bottom-navbar">
+    <nav class="navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+        <a href="contacts.html" class="fa-regular fa-address-book"></a>
+        <a href="FAQ.html" class="fa-solid fa-question"></a>
+    </nav>
+</nav>
+
+<div class="login-form-container">
+    <form action="" method="post" onsubmit="validateForm()">
+        <h3>sign up</h3>
+        <span>name</span>
+        <input type="text" name="first_name" class="box" placeholder="enter your name" required>
+        <span>surname</span>
+        <input type="text" name="last_name" class="box" placeholder="enter your surname" required>
+        <span>middle name</span>
+        <input type="text" name="middle_name" class="box" placeholder="enter your middle name" required>
+        <span>email</span>
+        <input type="email" name="email" class="box" placeholder="enter your email" required>
+        <span>number</span>
+        <input type="tel" id="tel" name="tel" class="box" placeholder="enter your phone number" required>
+        <span>password</span>
+        <input type="password" name="password" class="box" placeholder="enter your password" required>
+        <span>birthday date</span>
+        <input type="date" name="birthdate" class="box" required>
+        <span>favourite genre</span>
+        <select name="genres[]" class="box">
+            <option value="Action and Adventure">Action and Adventure</option>
+            <option value="Classics">Classics</option>
+            <option value="Comic Book or Graphic Novel">Comic Book or Graphic Novel</option>
+            <option value="Detective and Mystery">Detective and Mystery</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Historical Fiction">Historical Fiction</option>
+            <option value="Horror">Horror</option>
+        </select>
+        <span>gender</span>
+        <label>
+            <input type="radio" name="gender" value="male" required>
+            Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female" required>
+            Female
+        </label>
+        <label>
+            <input type="radio" name="gender" value="other" required>
+            Other
+        </label>
+        <span>add profile picture</span>
+        <input type="file" name="file" class="box" accept=".jpeg, .png, .svg" required>
+        <input type="submit" value="submit" class="btn">
+        <p>already have an account? <a href="login.html">sign in</a></p>
+    </form>
+</div>
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> lviv </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> kyiv </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> odesa </a>
+        </div>
+
+        <div class="box">
+            <h3>contacts</h3>
+            <a href="tel:+380986444551"><i class="fa-solid fa-phone"></i> phone </a>
+            <a href="mailto:anstxp@gmail.com"><i class="fa-regular fa-envelope"></i> email </a>
+            <a href="https://telegram.me/nstxp"><i class="fa-brands fa-telegram"></i> telegram </a>
+        </div>
+
+        <div class="box">
+            <h3>share</h3>
+            <a href="#"><i class="fa-brands fa-instagram"></i> instagram </a>
+            <a href="#"><i class="fa-brands fa-facebook"></i> facebook </a>
+            <a href="#"><i class="fa-brands fa-twitter"></i> twitter </a>
+        </div>
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="maskinput.js"></script>
+<script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="lab5.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<section class="rectangle">
+  <form action="" method="post">
+  <h2 class="heading-np">rectangle</h2>
+  <span>length</span>
+  <input type="number" name="length" class="box" placeholder="length">
+  <span>width</span>
+  <input type="number" name="width" class="box" placeholder="width">
+  <p>perimeter: <span id="perimeter">0</span></p>
+  <p>area: <span id="area">0</span></p>
+  <p>diagonal: <span id="diagonal">0</span></p>
+  </form>
+</section>
+
+<section class="chat">
+  <div class="input-box">
+    <input type="text" id="user1-message" class="box" placeholder="Message from user1">
+    <button id="user1-send-button" class="btn">send</button>
+  </div>
+  <div class="chat-window" id="chat-window">
+  </div>
+  <div class="input-box">
+    <input type="text" id="user2-message" class="box" placeholder="Message from user2">
+    <button id="user2-send-button" class="btn">send</button>
+  </div>
+</section>
+
+<section class="transliteration">
+  <form action="" method="post">
+    <span>Український текст</span>
+    <textarea type="text" id="ukrainianInput" class="box" placeholder=""></textarea>
+    <span>Транслітерований текст</span>
+    <textarea type="text" id="transliteratedOutput" class="box" readonly></textarea>
+  </form>
+</section>
+
+<section class="birthdate">
+  <form action="" method="post">
+  <span>enter your birthdate</span>
+  <input type="date" id="birthdate" class="box">
+  <button type="button" class="btn" onclick="calculateDay()">calculate</button>
+    <p id="result"></p>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
